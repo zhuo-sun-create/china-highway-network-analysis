@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fc4489db13557397398d8b2845903ae1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fc4489db13557397398d8b2845903ae1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fc4489db13557397398d8b2845903ae1 = L.map(
+                "map_fc4489db13557397398d8b2845903ae1",
+                {
+                    center: [35.8, 104.2],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ca5f9cf17c351ec91de27e8ff89e787b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ca5f9cf17c351ec91de27e8ff89e787b.addTo(map_fc4489db13557397398d8b2845903ae1);
+        
+    
+            var feature_group_c8a9e54ce2743882357735031e04f2f9 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_09241e084031aceaf6ccb9faaa46d193 = L.polyline(
+                [[39.9042, 116.4074], [45.8038, 126.5349]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c8a9e54ce2743882357735031e04f2f9);
+        
+    
+        var popup_84df8127c3e47fc9d82e9051ff4d3b70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb1fc566d02c53a0d7f42a21b4eaab08 = $(`<div id="html_eb1fc566d02c53a0d7f42a21b4eaab08" style="width: 100.0%; height: 100.0%;"><b>G1 Beijing-Harbin Expressway</b><br>Type: Capital Radial<br>Start: Beijing<br>End: Harbin</div>`)[0];
+                popup_84df8127c3e47fc9d82e9051ff4d3b70.setContent(html_eb1fc566d02c53a0d7f42a21b4eaab08);
+            
+        
+
+        poly_line_09241e084031aceaf6ccb9faaa46d193.bindPopup(popup_84df8127c3e47fc9d82e9051ff4d3b70)
+        ;
+
+        
+    
+    
+            var poly_line_588e03f960e7f960aa5ec47bcd5a5e5a = L.polyline(
+                [[39.9042, 116.4074], [31.2304, 121.4737]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c8a9e54ce2743882357735031e04f2f9);
+        
+    
+        var popup_4cf23b91f822adfbfd41666986e0aad6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd7332cb936f073ffb34fc6a0db23320 = $(`<div id="html_fd7332cb936f073ffb34fc6a0db23320" style="width: 100.0%; height: 100.0%;"><b>G2 Beijing-Shanghai Expressway</b><br>Type: Capital Radial<br>Start: Beijing<br>End: Shanghai</div>`)[0];
+                popup_4cf23b91f822adfbfd41666986e0aad6.setContent(html_fd7332cb936f073ffb34fc6a0db23320);
+            
+        
+
+        poly_line_588e03f960e7f960aa5ec47bcd5a5e5a.bindPopup(popup_4cf23b91f822adfbfd41666986e0aad6)
+        ;
+
+        
+    
+    
+            var poly_line_e98dd9a08b8368b824894108600cc5fd = L.polyline(
+                [[39.9042, 116.4074], [25.033, 121.5654]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c8a9e54ce2743882357735031e04f2f9);
+        
+    
+        var popup_66c720d48ded0ccbbb47044d01723d5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbc0db35db7597f96c79a36797332f4c = $(`<div id="html_cbc0db35db7597f96c79a36797332f4c" style="width: 100.0%; height: 100.0%;"><b>G3 Beijing-Taipei Expressway</b><br>Type: Capital Radial<br>Start: Beijing<br>End: Taipei</div>`)[0];
+                popup_66c720d48ded0ccbbb47044d01723d5b.setContent(html_cbc0db35db7597f96c79a36797332f4c);
+            
+        
+
+        poly_line_e98dd9a08b8368b824894108600cc5fd.bindPopup(popup_66c720d48ded0ccbbb47044d01723d5b)
+        ;
+
+        
+    
+    
+            var poly_line_5f3a48efda87b34df492e7a542695519 = L.polyline(
+                [[39.9042, 116.4074], [22.3193, 114.1694]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c8a9e54ce2743882357735031e04f2f9);
+        
+    
+        var popup_59167e587c06ab257d4739e926704996 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fbec1cc47e041ce56edf7753c795e68 = $(`<div id="html_6fbec1cc47e041ce56edf7753c795e68" style="width: 100.0%; height: 100.0%;"><b>G4 Beijing-Hong Kong-Macao Expressway</b><br>Type: Capital Radial<br>Start: Beijing<br>End: Hong Kong-Macao</div>`)[0];
+                popup_59167e587c06ab257d4739e926704996.setContent(html_6fbec1cc47e041ce56edf7753c795e68);
+            
+        
+
+        poly_line_5f3a48efda87b34df492e7a542695519.bindPopup(popup_59167e587c06ab257d4739e926704996)
+        ;
+
+        
+    
+    
+            var poly_line_e1e70a9c4afd9ec55a5534c7bbbe0b1f = L.polyline(
+                [[39.9042, 116.4074], [25.0389, 102.7183]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c8a9e54ce2743882357735031e04f2f9);
+        
+    
+        var popup_eb2d0e606ac5df6132cd987e3dd33e94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79b2f40fb38292f466b9f67a0142486e = $(`<div id="html_79b2f40fb38292f466b9f67a0142486e" style="width: 100.0%; height: 100.0%;"><b>G5 Beijing-Kunming Expressway</b><br>Type: Capital Radial<br>Start: Beijing<br>End: Kunming</div>`)[0];
+                popup_eb2d0e606ac5df6132cd987e3dd33e94.setContent(html_79b2f40fb38292f466b9f67a0142486e);
+            
+        
+
+        poly_line_e1e70a9c4afd9ec55a5534c7bbbe0b1f.bindPopup(popup_eb2d0e606ac5df6132cd987e3dd33e94)
+        ;
+
+        
+    
+    
+            var poly_line_0ed0997ee7258c80406b5ab513782be1 = L.polyline(
+                [[39.9042, 116.4074], [29.652, 91.1721]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c8a9e54ce2743882357735031e04f2f9);
+        
+    
+        var popup_4159f85b9b3f3914a9b032041efbec52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd88c691ccbc0b79bf2749bf78071c51 = $(`<div id="html_dd88c691ccbc0b79bf2749bf78071c51" style="width: 100.0%; height: 100.0%;"><b>G6 Beijing-Lhasa Expressway</b><br>Type: Capital Radial<br>Start: Beijing<br>End: Lhasa</div>`)[0];
+                popup_4159f85b9b3f3914a9b032041efbec52.setContent(html_dd88c691ccbc0b79bf2749bf78071c51);
+            
+        
+
+        poly_line_0ed0997ee7258c80406b5ab513782be1.bindPopup(popup_4159f85b9b3f3914a9b032041efbec52)
+        ;
+
+        
+    
+    
+            var poly_line_1e73a406d4c408ed5a1b79d0c13527e4 = L.polyline(
+                [[39.9042, 116.4074], [43.8256, 87.6168]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_c8a9e54ce2743882357735031e04f2f9);
+        
+    
+        var popup_c2370726d214789dbae50bd30b4f79b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f8161bb1ebe5a8b64216f786fd86c27 = $(`<div id="html_8f8161bb1ebe5a8b64216f786fd86c27" style="width: 100.0%; height: 100.0%;"><b>G7 Beijing-Urumqi Expressway</b><br>Type: Capital Radial<br>Start: Beijing<br>End: Urumqi</div>`)[0];
+                popup_c2370726d214789dbae50bd30b4f79b2.setContent(html_8f8161bb1ebe5a8b64216f786fd86c27);
+            
+        
+
+        poly_line_1e73a406d4c408ed5a1b79d0c13527e4.bindPopup(popup_c2370726d214789dbae50bd30b4f79b2)
+        ;
+
+        
+    
+    
+            feature_group_c8a9e54ce2743882357735031e04f2f9.addTo(map_fc4489db13557397398d8b2845903ae1);
+        
+    
+            var feature_group_fcfd3cb699b0df693468dde551e8b32a = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_4f74691ba5da364a9c89c917320027f7 = L.polyline(
+                [[47.3501, 130.2979], [38.914, 121.6147]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_fcfd3cb699b0df693468dde551e8b32a);
+        
+    
+        var popup_76bb4c6e8ae522209ab159a933f9eb75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf9e00dead8a029409e75782c4f5d584 = $(`<div id="html_bf9e00dead8a029409e75782c4f5d584" style="width: 100.0%; height: 100.0%;"><b>G11 Hegang-Dalian Expressway</b><br>Type: North-South<br>Start: Hegang<br>End: Dalian</div>`)[0];
+                popup_76bb4c6e8ae522209ab159a933f9eb75.setContent(html_bf9e00dead8a029409e75782c4f5d584);
+            
+        
+
+        poly_line_4f74691ba5da364a9c89c917320027f7.bindPopup(popup_76bb4c6e8ae522209ab159a933f9eb75)
+        ;
+
+        
+    
+    
+            var poly_line_62a4d7b3871eecf6b56dd8fc4e121727 = L.polyline(
+                [[41.8057, 123.4315], [20.044, 110.1999]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_fcfd3cb699b0df693468dde551e8b32a);
+        
+    
+        var popup_109b1aa0fdcfdacf4fcd3e6fda384439 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8caa50e7e9c044c73a69f7f10e4e27bc = $(`<div id="html_8caa50e7e9c044c73a69f7f10e4e27bc" style="width: 100.0%; height: 100.0%;"><b>G15 Shenyang-Haikou Expressway</b><br>Type: North-South<br>Start: Shenyang<br>End: Haikou</div>`)[0];
+                popup_109b1aa0fdcfdacf4fcd3e6fda384439.setContent(html_8caa50e7e9c044c73a69f7f10e4e27bc);
+            
+        
+
+        poly_line_62a4d7b3871eecf6b56dd8fc4e121727.bindPopup(popup_109b1aa0fdcfdacf4fcd3e6fda384439)
+        ;
+
+        
+    
+    
+            var poly_line_ecf1ad2bd00b772e7518126a8a503f78 = L.polyline(
+                [[43.8171, 125.3235], [22.5431, 114.0579]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_fcfd3cb699b0df693468dde551e8b32a);
+        
+    
+        var popup_2403f1eb9e366fa3002ae3d2410bf44a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb17b8b7546b19335a7b63771445e936 = $(`<div id="html_bb17b8b7546b19335a7b63771445e936" style="width: 100.0%; height: 100.0%;"><b>G25 Changchun-Shenzhen Expressway</b><br>Type: North-South<br>Start: Changchun<br>End: Shenzhen</div>`)[0];
+                popup_2403f1eb9e366fa3002ae3d2410bf44a.setContent(html_bb17b8b7546b19335a7b63771445e936);
+            
+        
+
+        poly_line_ecf1ad2bd00b772e7518126a8a503f78.bindPopup(popup_2403f1eb9e366fa3002ae3d2410bf44a)
+        ;
+
+        
+    
+    
+            var poly_line_30aaf767f98793ba811ec8397af31e79 = L.polyline(
+                [[36.6512, 117.1201], [23.1291, 113.2644]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_fcfd3cb699b0df693468dde551e8b32a);
+        
+    
+        var popup_24036e0b29afdf39eb67446968c2a1dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_775d99401bd3b93c4a15beb9dc1a42cc = $(`<div id="html_775d99401bd3b93c4a15beb9dc1a42cc" style="width: 100.0%; height: 100.0%;"><b>G35 Jinan-Guangzhou Expressway</b><br>Type: North-South<br>Start: Jinan<br>End: Guangzhou</div>`)[0];
+                popup_24036e0b29afdf39eb67446968c2a1dc.setContent(html_775d99401bd3b93c4a15beb9dc1a42cc);
+            
+        
+
+        poly_line_30aaf767f98793ba811ec8397af31e79.bindPopup(popup_24036e0b29afdf39eb67446968c2a1dc)
+        ;
+
+        
+    
+    
+            var poly_line_619d886c1f532f6095c18c17ec7cd1a4 = L.polyline(
+                [[46.5893, 125.1038], [23.1291, 113.2644]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_fcfd3cb699b0df693468dde551e8b32a);
+        
+    
+        var popup_e69dbd89e3c3baac3afaed9445d1a5dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5219725262118868d13308bfc1a492de = $(`<div id="html_5219725262118868d13308bfc1a492de" style="width: 100.0%; height: 100.0%;"><b>G45 Daqing-Guangzhou Expressway</b><br>Type: North-South<br>Start: Daqing<br>End: Guangzhou</div>`)[0];
+                popup_e69dbd89e3c3baac3afaed9445d1a5dd.setContent(html_5219725262118868d13308bfc1a492de);
+            
+        
+
+        poly_line_619d886c1f532f6095c18c17ec7cd1a4.bindPopup(popup_e69dbd89e3c3baac3afaed9445d1a5dd)
+        ;
+
+        
+    
+    
+            feature_group_fcfd3cb699b0df693468dde551e8b32a.addTo(map_fc4489db13557397398d8b2845903ae1);
+        
+    
+            var feature_group_8ac946bd38d551994705719466252b65 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var poly_line_c6962f4a1009439a5eca9f16e679ea69 = L.polyline(
+                [[44.3969, 131.164], [49.5978, 117.3785]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8ac946bd38d551994705719466252b65);
+        
+    
+        var popup_12e753d6d9fb762138a9ef4c9fd52072 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca1c5335a016bb263235b65f93c70a5a = $(`<div id="html_ca1c5335a016bb263235b65f93c70a5a" style="width: 100.0%; height: 100.0%;"><b>G10 Suifenhe-Manzhouli Expressway</b><br>Type: East-West<br>Start: Suifenhe<br>End: Manzhouli</div>`)[0];
+                popup_12e753d6d9fb762138a9ef4c9fd52072.setContent(html_ca1c5335a016bb263235b65f93c70a5a);
+            
+        
+
+        poly_line_c6962f4a1009439a5eca9f16e679ea69.bindPopup(popup_12e753d6d9fb762138a9ef4c9fd52072)
+        ;
+
+        
+    
+    
+            var poly_line_1826b486501424d6c639731ed8009ecc = L.polyline(
+                [[42.8625, 130.366], [46.0727, 122.093]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8ac946bd38d551994705719466252b65);
+        
+    
+        var popup_cb6255cd8e2090f89934165a0e075504 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3c8b249c8249507d341b10e56757488 = $(`<div id="html_c3c8b249c8249507d341b10e56757488" style="width: 100.0%; height: 100.0%;"><b>G12 Hunchun-Ulanhot Expressway</b><br>Type: East-West<br>Start: Hunchun<br>End: Ulanhot</div>`)[0];
+                popup_cb6255cd8e2090f89934165a0e075504.setContent(html_c3c8b249c8249507d341b10e56757488);
+            
+        
+
+        poly_line_1826b486501424d6c639731ed8009ecc.bindPopup(popup_cb6255cd8e2090f89934165a0e075504)
+        ;
+
+        
+    
+    
+            var poly_line_ce13e876aa2da16e11d6cfd7db0577b1 = L.polyline(
+                [[40.1243, 124.3947], [43.944, 116.0861]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8ac946bd38d551994705719466252b65);
+        
+    
+        var popup_10d5c59afcf6afbc4b70c287fdae642d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41a1b203159bc04af724da733d6df32f = $(`<div id="html_41a1b203159bc04af724da733d6df32f" style="width: 100.0%; height: 100.0%;"><b>G16 Dandong-Xilinhot Expressway</b><br>Type: East-West<br>Start: Dandong<br>End: Xilinhot</div>`)[0];
+                popup_10d5c59afcf6afbc4b70c287fdae642d.setContent(html_41a1b203159bc04af724da733d6df32f);
+            
+        
+
+        poly_line_ce13e876aa2da16e11d6cfd7db0577b1.bindPopup(popup_10d5c59afcf6afbc4b70c287fdae642d)
+        ;
+
+        
+    
+    
+            var poly_line_1ff57d41c6a9f50f1a83657762eb4892 = L.polyline(
+                [[37.1652, 122.4867], [39.655, 106.7942]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8ac946bd38d551994705719466252b65);
+        
+    
+        var popup_06ad50fc9d2aac010a8c1b9cfaf48cec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8a6115bc4074c4c489beb7885ecfacb9 = $(`<div id="html_8a6115bc4074c4c489beb7885ecfacb9" style="width: 100.0%; height: 100.0%;"><b>G18 Rongcheng-Wuhai Expressway</b><br>Type: East-West<br>Start: Rongcheng<br>End: Wuhai</div>`)[0];
+                popup_06ad50fc9d2aac010a8c1b9cfaf48cec.setContent(html_8a6115bc4074c4c489beb7885ecfacb9);
+            
+        
+
+        poly_line_1ff57d41c6a9f50f1a83657762eb4892.bindPopup(popup_06ad50fc9d2aac010a8c1b9cfaf48cec)
+        ;
+
+        
+    
+    
+            var poly_line_8bdf178e63fca04dc38a355fad12df1e = L.polyline(
+                [[36.0671, 120.3826], [38.4872, 106.2309]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8ac946bd38d551994705719466252b65);
+        
+    
+        var popup_5b47f15a9aff5ca6df44a80f3845d675 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eff51f61522e72b035465ac11beab98e = $(`<div id="html_eff51f61522e72b035465ac11beab98e" style="width: 100.0%; height: 100.0%;"><b>G20 Qingdao-Yinchuan Expressway</b><br>Type: East-West<br>Start: Qingdao<br>End: Yinchuan</div>`)[0];
+                popup_5b47f15a9aff5ca6df44a80f3845d675.setContent(html_eff51f61522e72b035465ac11beab98e);
+            
+        
+
+        poly_line_8bdf178e63fca04dc38a355fad12df1e.bindPopup(popup_5b47f15a9aff5ca6df44a80f3845d675)
+        ;
+
+        
+    
+    
+            var poly_line_2e75395d1a414421937b6feeab1e2adf = L.polyline(
+                [[36.0671, 120.3826], [36.0611, 103.8343]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8ac946bd38d551994705719466252b65);
+        
+    
+        var popup_5927a0702cd481835ef771a642a403db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2c3cd2195ccf92476fb25ad7c71cbf7 = $(`<div id="html_d2c3cd2195ccf92476fb25ad7c71cbf7" style="width: 100.0%; height: 100.0%;"><b>G22 Qingdao-Lanzhou Expressway</b><br>Type: East-West<br>Start: Qingdao<br>End: Lanzhou</div>`)[0];
+                popup_5927a0702cd481835ef771a642a403db.setContent(html_d2c3cd2195ccf92476fb25ad7c71cbf7);
+            
+        
+
+        poly_line_2e75395d1a414421937b6feeab1e2adf.bindPopup(popup_5927a0702cd481835ef771a642a403db)
+        ;
+
+        
+    
+    
+            var poly_line_0385f3fa0f5d719db85b923f6e224995 = L.polyline(
+                [[34.5967, 119.2216], [44.214, 80.413]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8ac946bd38d551994705719466252b65);
+        
+    
+        var popup_62063a3ae0668df0da021730b6bc925e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2acf09de3919ddbb180f7528f55881a = $(`<div id="html_f2acf09de3919ddbb180f7528f55881a" style="width: 100.0%; height: 100.0%;"><b>G30 Lianyungang-Khorgos Expressway</b><br>Type: East-West<br>Start: Lianyungang<br>End: Khorgos</div>`)[0];
+                popup_62063a3ae0668df0da021730b6bc925e.setContent(html_f2acf09de3919ddbb180f7528f55881a);
+            
+        
+
+        poly_line_0385f3fa0f5d719db85b923f6e224995.bindPopup(popup_62063a3ae0668df0da021730b6bc925e)
+        ;
+
+        
+    
+    
+            var poly_line_324cd7124031a5b0642c6fb563193361 = L.polyline(
+                [[32.0603, 118.7969], [34.6197, 112.454]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(feature_group_8ac946bd38d551994705719466252b65);
+        
+    
+        var popup_89f603885fab6e92c77c531f5823af27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3fc2f525dbd06e561f28fe9d43ac43fb = $(`<div id="html_3fc2f525dbd06e561f28fe9d43ac43fb" style="width: 100.0%; height: 100.0%;"><b>G36 Nanjing-Luoyang Expressway</b><br>Type: East-West<br>Start: Nanjing<br>End: Luoyang</div>`)[0];
+                popup_89f603885fab6e92c77c531f5823af27.setContent(html_3fc2f525dbd06e561f28fe9d43ac43fb);
+            
+        
+
+        poly_line_324cd7124031a5b0642c6fb563193361.bindPopup(popup_89f603885fab6e92c77c531f5823af27)
+        ;
+
+        
+    
+    
+            feature_group_8ac946bd38d551994705719466252b65.addTo(map_fc4489db13557397398d8b2845903ae1);
+        
+    
+            var layer_control_6924de3991b2d706f3e70398be06f62f_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_ca5f9cf17c351ec91de27e8ff89e787b,
+                },
+                overlays :  {
+                    "Capital Radial" : feature_group_c8a9e54ce2743882357735031e04f2f9,
+                    "North-South" : feature_group_fcfd3cb699b0df693468dde551e8b32a,
+                    "East-West" : feature_group_8ac946bd38d551994705719466252b65,
+                },
+            };
+            let layer_control_6924de3991b2d706f3e70398be06f62f = L.control.layers(
+                layer_control_6924de3991b2d706f3e70398be06f62f_layers.base_layers,
+                layer_control_6924de3991b2d706f3e70398be06f62f_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_fc4489db13557397398d8b2845903ae1);
+
+        
+</script>
+</html>
