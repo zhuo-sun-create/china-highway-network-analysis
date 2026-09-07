@@ -1,0 +1,21 @@
+highway_code,highway_name,start_city,end_city,network_type
+G1,Beijing-Harbin Expressway,Beijing,Harbin,Capital Radial
+G2,Beijing-Shanghai Expressway,Beijing,Shanghai,Capital Radial
+G3,Beijing-Taipei Expressway,Beijing,Taipei,Capital Radial
+G4,Beijing-Hong Kong-Macao Expressway,Beijing,Hong Kong-Macao,Capital Radial
+G5,Beijing-Kunming Expressway,Beijing,Kunming,Capital Radial
+G6,Beijing-Lhasa Expressway,Beijing,Lhasa,Capital Radial
+G7,Beijing-Urumqi Expressway,Beijing,Urumqi,Capital Radial
+G11,Hegang-Dalian Expressway,Hegang,Dalian,North-South
+G15,Shenyang-Haikou Expressway,Shenyang,Haikou,North-South
+G25,Changchun-Shenzhen Expressway,Changchun,Shenzhen,North-South
+G35,Jinan-Guangzhou Expressway,Jinan,Guangzhou,North-South
+G45,Daqing-Guangzhou Expressway,Daqing,Guangzhou,North-South
+G10,Suifenhe-Manzhouli Expressway,Suifenhe,Manzhouli,East-West
+G12,Hunchun-Ulanhot Expressway,Hunchun,Ulanhot,East-West
+G16,Dandong-Xilinhot Expressway,Dandong,Xilinhot,East-West
+G18,Rongcheng-Wuhai Expressway,Rongcheng,Wuhai,East-West
+G20,Qingdao-Yinchuan Expressway,Qingdao,Yinchuan,East-West
+G22,Qingdao-Lanzhou Expressway,Qingdao,Lanzhou,East-West
+G30,Lianyungang-Khorgos Expressway,Lianyungang,Khorgos,East-West
+G36,Nanjing-Luoyang Expressway,Nanjing,Luoyang,East-West
