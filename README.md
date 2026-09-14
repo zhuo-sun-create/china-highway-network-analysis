@@ -6,6 +6,10 @@
 
 [打开中国高速公路交互式地图](https://zhuo-sun-create.github.io/china-highway-network-analysis/)
 
+## 网络分析页面
+
+[查看高速公路网络分析](https://zhuo-sun-create.github.io/china-highway-network-analysis/highway_network_analysis.html)
+
 ## 项目功能
 
 - 展示中国大陆及港澳地区高速公路网络
