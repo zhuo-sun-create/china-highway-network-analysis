@@ -52,5 +52,6 @@ This project was developed to practice:
 
 ## Author
 
-孙卓 
-交通工程专业本科生
+Zhuo Sun  
+
+Undergraduate Student in Traffic Engineering
