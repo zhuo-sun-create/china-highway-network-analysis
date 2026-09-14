@@ -1,57 +1,43 @@
-# China Highway Network Analysis and Interactive Visualization
+# 中国高速公路网络分析与交互式可视化
 
-An interactive visualization and regional analysis project for China's motorway network, built with OpenStreetMap data.
+一个基于 Python、OpenStreetMap 和 Leaflet 的中国高速公路网络可视化项目。
 
-## Live Demo
+## 在线地图
 
-[Open the Interactive Highway Map](https://zhuo-sun-create.github.io/china-highway-network-analysis/)
+[打开中国高速公路交互式地图](https://zhuo-sun-create.github.io/china-highway-network-analysis/)
 
-[View the Network Analysis Dashboard](https://zhuo-sun-create.github.io/china-highway-network-analysis/highway_network_analysis.html)
+## 网络分析页面
 
-## Features
+[查看高速公路网络分析](https://zhuo-sun-create.github.io/china-highway-network-analysis/highway_network_analysis.html)
 
-- Interactive visualization of motorway networks
-- Coverage across 31 mapped regions
-- Regional map selection and city locator
-- Road name and route number search
-- Clickable road details
-- Regional motorway segment ranking
-- Estimated motorway length comparison
-- Mobile-friendly interface
-- Compressed and regionally split data loading
+## 项目功能
 
-## Technology Stack
+- 展示中国大陆及港澳地区高速公路网络
+- 支持全国高速公路总览
+- 支持按省区查看高速公路
+- 支持地图缩放、平移和城市定位
+- 支持道路名称和编号搜索
+- 点击道路可查看详细信息
+- 使用分区数据加载，提升手机端访问速度
+
+## 技术栈
 
 - Python
 - OpenStreetMap
 - Leaflet.js
 - JavaScript
 - HTML / CSS
-- Gzip data compression
+- Gzip 数据压缩
 
-## Data Source
+## 数据说明
 
-The road data comes from OpenStreetMap and primarily uses roads tagged as `highway=motorway`.
+数据来源于 OpenStreetMap，主要筛选 `motorway` 类型道路。  
+数据用于交通工程学习、可视化展示和个人作品集，不代表实时交通状况，道路完整性未经专业测绘验证。
 
-The data represents a static map snapshot. It does not provide real-time traffic conditions, and data completeness has not been professionally surveyed.
+## 项目背景
 
-## Analysis Method
+本项目用于练习交通数据处理、道路网络可视化、地图交互设计以及面向移动端的网页优化。
 
-Road length is estimated from road-node coordinates using the Haversine formula. Regional segment counts are grouped by mapped region. Cross-boundary roads may be counted in more than one region.
+## 作者
 
-## Project Purpose
-
-This project was developed to practice:
-
-- Transportation data processing
-- GIS-based road network visualization
-- Interactive web mapping
-- Large-scale data organization
-- Mobile web performance optimization
-- Regional transportation network analysis
-
-## Author
-
-Zhuo Sun  
-
-Undergraduate Student in Traffic Engineering
+孙卓｜交通工程专业本科生
